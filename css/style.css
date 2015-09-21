@@ -1,0 +1,332 @@
+/* Default text color. */
+body,
+a {
+  color: #747704;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  margin: 10px 0;
+}
+
+/* Thickening horizontal lines. */
+hr {
+  margin: 10px 0;
+  border-bottom: 3px solid;
+  color: #bcbbbb;
+}
+
+
+/***************************************/
+/* Header                              */
+/***************************************/
+
+/* Apply to the top-left Logo icon. */
+.logo_icon {
+  color: #f8981c;
+  border: solid #f8981c 7px;
+  padding: 15px;
+
+  /* Add extra top margin when the name displayed on
+     multiple lines. */
+  margin-top: 30px;
+}
+
+/* Apply to screen size >= 492px (minor breakpoint) */
+@media (min-width: 492px) {
+  /* Remove the extra top margin. */
+  .logo_icon {
+    margin-top: 0;
+  }
+}
+
+/* Apply to screen size >= 1200px (large devices) */
+@media (min-width: 1200px) {
+  /* Make the font a little larger. */
+  .logo_icon {
+    font-size: 6em !important;
+    padding: 20px;
+    border-width: 12px;
+  }
+}
+
+/* Styles for my name. */
+.name {
+  font-size: 3.6em;
+  font-weight: 300;
+  /*margin: 15px 0 0;*/
+  letter-spacing: 2px;
+}
+
+/* Apply to screen size >= 1200px (large devices) */
+@media (min-width: 1200px) {
+  /* Make the font a little larger. */
+  .name {
+    font-size: 6em;
+  }
+}
+
+/* Styles for my title. */
+.title {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Apply to screen size >= 1200px (large devices) */
+@media (min-width: 1200px) {
+  /* Make the font a little larger. */
+  .title {
+    font-size: 2em;
+  }
+}
+
+
+
+/***************************************/
+/* Navigation                          */
+/***************************************/
+nav {
+  text-align: center;
+}
+
+/* Apply to the list in the navigation. */
+.nav_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+  -webkit-transform: translate(-3000px, 0);
+  transform: translate(-3000px, 0);
+  transition: transform 0.3s ease;
+}
+
+/* Apply when the screen size gets greater than 768px
+   (small devices and larger), where the navigation
+   is always displayed. */
+@media (min-width: 768px) {
+  /* Display the nav list in one line. */
+  .nav_list {
+    display: inline;
+    position: static;
+  }
+}
+
+/* Apply to the list item in the navigation when the list needs
+   to be displayed. */
+.open {
+  display: block;
+  background-color: #fff;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* Apply to the list items in the navigation. */
+.nav_list_item {
+  background-color: #f5f9d7;
+  padding: 20px 100px;
+  font-size: 1.5em;
+}
+
+/* Apply when the screen size gets greater than 768px
+   (small devices and larger), where the navigation
+   is always displayed. */
+@media (min-width: 768px) {
+  .nav_list_item {
+    background-color: #fff;
+    /* Display the nav list in one line. */
+    display: inline-block;
+    padding: 0;
+    width: calc((100% - 10px) / 3);
+  }
+}
+
+/* Apply to only the last list item in the navigation to
+   display the right border. (Everything else displays
+   left borders. */
+.nav_list_item:last-of-type {
+  border-right-width: 1px;
+}
+
+/* Apply when the screen size gets greater than 768px
+   (small devices and larger), where the navigation
+   is always displayed. */
+@media (min-width: 768px) {
+  .hamberger_menu_icon {
+    display: none;
+  }
+}
+
+
+/***************************************/
+/* Content                             */
+/***************************************/
+
+/* Message overlayed on the large image. */
+.message {
+  margin: 3vw 0 0 10vw;
+  position: absolute;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Apply to screen size >= 550px (minor breakpoint) */
+@media (min-width: 550px) {
+  /* Make the font a little larger. */
+  .message {
+    font-size: 2em;
+  }
+}
+
+/* Apply to screen size >= 768px (small devices and larger) */
+@media (min-width: 768px) {
+  /* Make the font a little larger. */
+  .message {
+    font-size: 3em;
+    margin-left: 5vw;
+  }
+}
+
+/* Apply to screen size >= 992px (midium devices and larger) */
+@media (min-width: 992px) {
+  /* Make the font a little larger. */
+  .message {
+    font-size: 4em;
+  }
+}
+
+/* Apply for the figcaption of the large image. */
+.large_image_figcaption {
+  text-align: right;
+}
+
+/* Between Screen width of 400px to 750px, the
+   large image doesn't have enough width to fill the
+   container. Therefore, I think it's safe to apply
+   100% to the width to avoid the image to be displayed
+   narrower. */
+.large_image {
+  width: 100%;
+}
+
+/* Styles for the item title. */
+.item_title {
+  color: #bcbbbb;
+  font-size: 2.4em;
+  margin-top: 60px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Apply to screen size >= 768px (small devices and larger) */
+@media (min-width: 768px) {
+  /* removing the extra room that is set for ex-small devices. */
+  .item_title {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+}
+
+/* Apply when the screen size gets greater than 992px(midium devices and larger). */
+@media (min-width: 992px) {
+  .item_title {
+    text-align: left;
+  }
+}
+
+/* Apply when the screen size >= 1280px(large devices). */
+@media (min-width: 1280px) {
+  .item_title {
+    font-size: 3.5em;
+  }
+}
+
+/* Style for the containers for each item */
+.item_container {
+  margin-bottom: 30px;
+}
+
+/* Apply when the screen size >= 992px
+   (for midium devices). */
+@media (min-width: 992px) {
+  /* Make the padding suitable for this size. */
+  .item_container:first-child {
+    padding-right: 0;
+  }
+
+  .item_container:last-child {
+    padding-left: 0;
+  }
+}
+
+/* Styles for the item images. */
+.item_image {
+  width: 80vw;
+  height: 40vw;
+}
+
+/* Apply when the screen size >= 768px
+   (for small devices). */
+@media (min-width: 768px) {
+  /* Make the item pictures larger. */
+  .item_image {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* Apply when the screen size >= 992px
+   (for midium devices). */
+@media (min-width: 992px) {
+  /* Make the item pictures a little more larger. */
+  .item_image {
+    width: 100%;
+    height: 190px;
+  }
+}
+
+/* Apply when the screen size >= 1200px
+   (for large devices). */
+@media (min-width: 1200px) {
+  /* Make the item pictures largest. */
+  .item_image {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* Apply to the figcaptions of the items listed. */
+.item_figcaption {
+  text-align: right;
+  margin-right: 50px;
+}
+
+/* Style for the screen width of 768px and greater
+   (small devices and larger ones.) */
+@media (min-width: 768px) {
+  .item_figcaption {
+    /* Remove the extra margin on the right. */
+    margin-right: 0;
+  }
+}
+
+/* Styles for the names of the items */
+.item_name {
+  font-size: 2em;
+}
+
+/* Apply when the screen size gets greater than 992px(md) and
+   the items are lined up vertically. */
+@media (min-width: 992px) {
+  .item_name {
+    font-size: 2.5em;
+  }
+}
+
+/* Apply when the screen size >= 1280px(large devices). */
+@media (min-width: 1280px) {
+  .item_name {
+    font-size: 3.5em;
+  }
+}
