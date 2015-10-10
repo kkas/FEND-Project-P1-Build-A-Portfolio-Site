@@ -9,9 +9,9 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-/*
+
     responsive_images: {
-      dev: {
+      small_images: {
         options: {
           engine: 'im',
           sizes: [{
@@ -31,11 +31,8 @@ module.exports = function(grunt) {
           cwd: 'images_src/',
           dest: 'images/'
         }]
-      }
-    },
-*/
-    responsive_images: {
-      dev: {
+      },
+      big_images: {
         options: {
           engine: 'im',
           sizes: [{
@@ -117,7 +114,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  //grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
-  grunt.registerTask('default', ['responsive_images']);
+
+  grunt.registerTask('images', [
+    'clean', 'mkdir', 'copy', 'responsive_images:small_images',
+    'responsive_images:big_images']);
+
+  // I could do the following but the above executes the same tasks with only
+  // one grunt command, which is better for now.
+  // grunt.registerTask('small', ['clean', 'mkdir', 'copy',
+  //   'responsive_images:small_images']);
+  // grunt.registerTask('big', ['responsive_images:big_images']);
 
 };
