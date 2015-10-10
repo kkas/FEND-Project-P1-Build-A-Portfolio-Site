@@ -108,16 +108,31 @@ module.exports = function(grunt) {
       },
     },
 
+    /* Optimize images using grunt-imageoptim plugin */
+    imageoptim: {
+      // Default options.
+      options: {
+        jpegMini: true,
+        imageAlpha: true,
+        quitAfter: true
+      },
+      optimize: {
+        options: {}, // Inherite all options.
+        src: ['images']
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
+  grunt.loadNpmTasks('grunt-imageoptim');
 
   grunt.registerTask('images', [
     'clean', 'mkdir', 'copy', 'responsive_images:small_images',
-    'responsive_images:big_images']);
+    'responsive_images:big_images', 'imageoptim:optimize']);
+  grunt.registerTask('optimize', ['imageoptim:optimize']);
 
   // I could do the following but the above executes the same tasks with only
   // one grunt command, which is better for now.
