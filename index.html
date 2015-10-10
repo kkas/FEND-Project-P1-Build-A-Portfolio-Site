@@ -97,6 +97,8 @@
           </div>
 
           <section>
+            <!-- row -->
+            <!-- This row has more than 12 columns for Column Wrapping: See http://getbootstrap.com/css/#grid-example-wrapping -->
             <div class="row text-center">
               <!-- First Item -->
               <div class="col-md-4 col-sm-6 col-xs-12 item_container">
@@ -108,26 +110,39 @@
 
                 <h4 class="item_name text-uppercase">About Me</h4>
 
-                <p><a href="https://github.com/kkas/FE-Nanodegree-Project-Assinment-P0-About-Me" target="_blank">https://github.com/kkas/FE-Nanodegree-Project-Assinment-P0-About-Me</a></p>
+                <p><a href="http://kkas.github.io/FE-Nanodegree-Project-Assinment-P0-About-Me/" target="_blank">kkas.github.io/FE-Nanodegree-Project-Assinment-P0-About-Me/</a></P>
+                <p><a href="https://github.com/kkas/FE-Nanodegree-Project-Assinment-P0-About-Me" target="_blank">(source code on GitHub is here)</a></p>
               </div>
 
               <!-- Second Item -->
               <div class="col-md-4 col-sm-6 col-xs-12 item_container">
                 <figure>
-                  <img src="images/portfolio-375_1x.jpg" srcset="images/portfolio-750_2x.jpg 2x, images/portfolio-375_1x.jpg 1x" alt="Picture of portfolio" class="item_image">
+                  <img src="images/my_interactive_resume-375_1x.png" srcset="images/my_interactive_resume-750_2x.png 2x, images/my_interactive_resume-375_1x.png 1x" alt="Picture of my interactive resume" class="item_image">
 
-                  <figcaption class="item_figcaption">
-                    <!-- portfolio -->
-                    <a href="https://www.flickr.com/photos/hericdk/8501868952/in/photolist-dXhirs-9Yr1Cw-8qg4aJ-9U1ZAe-ecwwcv-8HN1pW-7PSQvi-4oeeVc-b97yEa-8JrwSo-6kV1PZ-8NC8E3-8HJSEF-F5RmV-62N5Zi-ed8T4X-4KxzCy-aKwPGr-bqy6d1-aDgjL-5Zh1Ng-5ZmcEC-5Zh1cc-8weFZ-4KxBsA-9GFo4g-bqy5tQ-9L2dff-9nobDz-5ZgYrn-5ZmaJs-5ZgYix-8Er1D7-9GJqfE-aAfrRY-62N63D-679pbJ-c6WTpy-gU9dt-7kfDms-ecCqqN-7b59NH-7SSjs9-e5dBjJ-aNwRAM-7YT3ws-5ZgZMa-62Sm3u-bDt1bt-d9gxH3">(Author's info on Flicker)</a>
-                  </figcaption>
+                  <figcaption class="item_figcaption">&nbsp;</figcaption>
                 </figure>
 
-                <h4 class="item_name text-uppercase">2nd Portfolio</h4>
+                <h4 class="item_name text-uppercase">My Interactive Resume</h4>
 
-                <p><a href="https://github.com/kkas/second-portfolio" target="_blank">https://github.com/kkas/second-portfolio</a></p>
+                <p><a href="http://kkas.github.io/frontend-nanodegree-resume/" target="_blank">kkas.github.io/frontend-nanodegree-resume/</a></P>
+                <p><a href="https://github.com/kkas/frontend-nanodegree-resume" target="_blank">(source code on GitHub is here)</a></p>
               </div>
 
               <!-- Third Item -->
+              <div class="col-md-4 col-sm-6 col-xs-12 item_container">
+                <figure>
+                  <img src="images/my_arcade_game-375_1x.png" srcset="images/my_arcade_game-750_2x.png 2x, images/my_arcade_game-375_1x.png 1x" alt="Picture of my arcade game clone " class="item_image">
+
+                  <figcaption class="item_figcaption">&nbsp;</figcaption>
+                </figure>
+
+                <h4 class="item_name text-uppercase">Arcade Game Clone: Flogger</h4>
+
+                <p><a href="http://kkas.github.io/frontend-nanodegree-arcade-game/" target="_blank">kkas.github.io/frontend-nanodegree-arcade-game/</a></P>
+                <p><a href="https://github.com/kkas/frontend-nanodegree-arcade-game" target="_blank">(source code on GitHub is here)</a></p>
+              </div>
+
+              <!-- Fourth Item -->
               <div class="col-md-4 col-sm-6 col-xs-12 item_container">
                 <figure>
                   <img src="images/under_construction-375_1x.jpg" srcset="images/under_construction-750_2x.jpg 2x, images/under_construction-375_1x.jpg 1x" alt="Picture of under construction" class="item_image">
@@ -138,9 +153,51 @@
                   </figcaption>
                 </figure>
 
-                <h4 class="item_name text-uppercase">3rd Portfolio</h4>
+                <h4 class="item_name text-uppercase">4th Portfolio</h4>
 
-                <p><a href="https://github.com/kkas/third-portfolio" target="_blank">https://github.com/kkas/third-portfolio</a></p>
+                <p><a href="https://github.com/kkas/forth-portfolio" target="_blank">https://github.com/kkas/forth-portfolio</a></p>
+                <p>&nbsp;</p>
+              </div>
+
+              <!-- Apply clearfix since the 4th item does not have the same height with the 3rd item. Without this, the layout collaps when the device size fits in sm. -->
+              <!-- <div class="clearfix hidden-md hidden-lg"></div> -->
+              <div class="clearfix visible-sm-block"></div>
+              <!-- <div class="clearfix visible-xs-block"></div> -->
+              <!-- <div class="hidden-sm">a</div> -->
+              <!-- <div class="clearfix"></div> -->
+
+              <!-- Fifth Item -->
+              <div class="col-md-4 col-sm-6 col-xs-12 item_container">
+                <figure>
+                  <img src="images/portfolio-375_1x.jpg" srcset="images/portfolio-750_2x.jpg 2x, images/portfolio-375_1x.jpg 1x" alt="Picture of portfolio" class="item_image">
+
+                  <figcaption class="item_figcaption">
+                    <!-- portfolio -->
+                    <a href="https://www.flickr.com/photos/hericdk/8501868952/in/photolist-dXhirs-9Yr1Cw-8qg4aJ-9U1ZAe-ecwwcv-8HN1pW-7PSQvi-4oeeVc-b97yEa-8JrwSo-6kV1PZ-8NC8E3-8HJSEF-F5RmV-62N5Zi-ed8T4X-4KxzCy-aKwPGr-bqy6d1-aDgjL-5Zh1Ng-5ZmcEC-5Zh1cc-8weFZ-4KxBsA-9GFo4g-bqy5tQ-9L2dff-9nobDz-5ZgYrn-5ZmaJs-5ZgYix-8Er1D7-9GJqfE-aAfrRY-62N63D-679pbJ-c6WTpy-gU9dt-7kfDms-ecCqqN-7b59NH-7SSjs9-e5dBjJ-aNwRAM-7YT3ws-5ZgZMa-62Sm3u-bDt1bt-d9gxH3">(Author's info on Flicker)</a>
+                  </figcaption>
+                </figure>
+
+                <h4 class="item_name text-uppercase">5th Portfolio</h4>
+
+                <p><a href="https://github.com/kkas/fifth-portfolio" target="_blank">https://github.com/kkas/fifth-portfolio</a></p>
+                <p>&nbsp;</p>
+              </div>
+<!-- <div class="clearfix"></div> -->
+              <!-- Sixth Item -->
+              <div class="col-md-4 col-sm-6 col-xs-12 item_container">
+                <figure>
+                  <img src="images/under_construction-375_1x.jpg" srcset="images/under_construction-750_2x.jpg 2x, images/under_construction-375_1x.jpg 1x" alt="Picture of under construction" class="item_image">
+
+                  <figcaption class="item_figcaption">
+                    <!-- under construction -->
+                    <a href="https://www.flickr.com/photos/jasoneppink/8535788782/in/photolist-e1h9C7-d1cMmy-jhZGQZ-knHAwt-68oRHA-6FeVBN-nMFwia-cfuBdQ-8YgHZo-oNQEDj-hg1qBd-9zWNiK-6FeXjo-xoYARh-5RhqjZ-4Q3fXv-p8wB6V-bxrNkD-8FgR9E-5BF4f5-dA4h6K-bqnR3W-79usmi-3okKH-69QAHT-xBk4zC-tt2qX-5DzZRU-ei7Ffw-2f4e8-f1dQZ5-cwj4zw-stVEYa-oPGSGd-s2aVNm-4DdEce-aD9gKX-8jQHbc-onj6PG-fqPEoM-6Y9AgH-6Vh9Hm-8mQbDH-2uxZU-4AaWp6-btvNu1-iaP5WJ-9S6D8e-3dTQ1i-aBTY2C">(Author's info on Flicker)</a>
+                  </figcaption>
+                </figure>
+
+                <h4 class="item_name text-uppercase">6th Portfolio</h4>
+
+                <p><a href="https://github.com/kkas/sixth-portfolio" target="_blank">https://github.com/kkas/sixth-portfolio</a></p>
+                <p>&nbsp;</p>
               </div>
             </div>
           </section>
