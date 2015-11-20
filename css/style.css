@@ -330,3 +330,7 @@ nav {
     font-size: 3.5em;
   }
 }
+
+.desc-list {
+  text-align: left;
+}
