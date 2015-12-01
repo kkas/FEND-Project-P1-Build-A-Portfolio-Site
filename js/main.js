@@ -19,8 +19,8 @@ var initialize = function(){
 
   // Add animations for the item images.
   $(".item_image").hover(
-    function() {$(this).addClass("animated bounce"); },
-    function() {$(this).removeClass("animated bounce"); }
+    function() {$(this).addClass("animated pulse"); },
+    function() {$(this).removeClass("animated pulse"); }
   );
 };
 
