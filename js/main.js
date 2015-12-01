@@ -11,8 +11,6 @@ var nav_list_open = 'open';
  */
 
 var initialize = function(){
-  console.log('initialize called.');
-
   var main = document.getElementsByTagName('main')[0];
   var nav_menu_icon = document.getElementById('nav_menu_icon');
 
