@@ -16,6 +16,12 @@ var initialize = function(){
 
   nav_menu_icon.addEventListener('click', toggle_nav_list_open);
   main.addEventListener('click', remove_open);
+
+  // Add animations for the item images.
+  $(".item_image").hover(
+    function() {$(this).addClass("animated bounce"); },
+    function() {$(this).removeClass("animated bounce"); }
+  );
 };
 
 /**
