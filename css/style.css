@@ -264,6 +264,7 @@ nav {
 .item_image {
   width: 80vw;
   height: 40vw;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
 
 /* Apply when the screen size >= 768px
